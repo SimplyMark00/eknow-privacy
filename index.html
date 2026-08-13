@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eKnow — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f2f4f7; --card: #ffffff; --ink: #12151a; --ink2: #545c6b;
+    --brand: #106a42; --line: #e2e6ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1214; --card: #171b1f; --ink: #eef1f4; --ink2: #9aa4b2;
+      --brand: #4fbc86; --line: #262c33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 72px; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+  h1 { font-size: 1.9rem; margin: 0; letter-spacing: -0.02em; }
+  .pkg { color: var(--ink2); font-size: .85rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .updated { color: var(--ink2); font-size: .9rem; margin: 0 0 24px; }
+  .lang { display: flex; gap: 8px; margin: 0 0 28px; }
+  .lang button {
+    font: inherit; font-size: .9rem; padding: 7px 16px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink2); cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+  section.doc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 8px 26px 26px; }
+  h2 { font-size: 1.05rem; margin: 30px 0 8px; letter-spacing: -0.01em; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 650; }
+  .lede { border-left: 3px solid var(--brand); padding-left: 14px; color: var(--ink2); }
+  footer { color: var(--ink2); font-size: .85rem; margin-top: 28px; text-align: center; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>eKnow</h1>
+    <span class="pkg">com.marcoaramini.app_finanza</span>
+  </header>
+  <p class="updated" id="updated">Privacy Policy · Last updated 13 August 2026</p>
+
+  <div class="lang">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="it" aria-pressed="false">Italiano</button>
+  </div>
+
+  <section class="doc" id="doc-en">
+    <p class="lede">eKnow is a personal finance tracker published by <strong>Marco Aramini</strong>.
+    The short version: everything stays on your device, and the app cannot send it anywhere.</p>
+
+    <h2>1. We do not collect any data</h2>
+    <p>The app has no user accounts, no registration and no login. It does not send your information
+    to us or to anyone else, because it has no ability to: eKnow does not request the Android
+    internet permission and makes no network requests of any kind. There is no server behind it.
+    We, the developers, never see your data.</p>
+    <p>The app contains no advertising, no analytics, no crash-reporting service and no third-party
+    tracking library.</p>
+
+    <h2>2. What the app stores on your device</h2>
+    <p>Everything you enter is written to a database in the app's private storage on your phone,
+    readable only by the app itself:</p>
+    <ul>
+      <li><strong>Transactions</strong> — date, description, category and amount.</li>
+      <li><strong>Recurring items</strong> — name, category, amount, frequency and next due date.</li>
+      <li><strong>Planned purchases</strong> — name, category, amount, urgency and target date.</li>
+      <li><strong>Investments</strong> — asset name, initial amount, monthly contribution and expected annual return.</li>
+      <li><strong>Settings</strong> — currency, language, monthly salary and payday, spending budget,
+      theme and interface style, and whether balances are hidden by default.</li>
+    </ul>
+    <p>This information never leaves the device unless you deliberately export it (see section 4).</p>
+
+    <h2>3. Device permissions</h2>
+    <ul>
+      <li><strong>Notifications</strong> — used only to remind you a few days before a recurring bill
+      is due. Reminders are scheduled and delivered entirely on your device. You can decline this
+      permission and the rest of the app works normally.</li>
+      <li><strong>Biometrics / device unlock</strong> — if you enable the balance lock, the app asks
+      Android to confirm it is you before revealing your balances. Android performs the check and
+      returns only success or failure. The app never receives, sees or stores your fingerprint,
+      face or PIN.</li>
+    </ul>
+
+    <h2>4. Backups you create yourself</h2>
+    <p>The app can export your data as a JSON file. This only ever happens when you tap the export
+    button. The file is then handed to Android's share sheet, and <strong>you</strong> choose where it
+    goes — a messaging app, a cloud drive, your own files. From that moment the file is under your
+    control and subject to the privacy policy of whichever service you chose. We are not involved in
+    that transfer and receive no copy.</p>
+    <p>Importing works the same way in reverse: you pick a file, and the app reads it locally.</p>
+
+    <h2>5. Home screen widgets</h2>
+    <p>The optional widgets show your balance and weekly spending on your home screen. The figures are
+    read from the same on-device database. Note that anyone who can see your home screen can see those
+    figures — remove the widget if that is a concern.</p>
+
+    <h2>6. How long data is kept, and how to delete it</h2>
+    <p>Your data stays on your device until you remove it. You can delete individual entries inside the
+    app, or erase everything at once by uninstalling eKnow or clearing its storage in Android's app
+    settings. Because we hold no copy, there is nothing for you to request from us, and nothing for us
+    to delete.</p>
+
+    <h2>7. Children</h2>
+    <p>eKnow is not directed at children under 13 and does not knowingly collect information from them.
+    Since it collects nothing from anyone, this is a statement of design rather than of policy.</p>
+
+    <h2>8. Not financial advice</h2>
+    <p>eKnow performs arithmetic on numbers you enter and shows projections based on assumptions you
+    choose. It is an organisational tool, not a licensed financial adviser, and its output is not
+    investment, tax or legal advice.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published at this address and the date at the
+    top will change. Because the app does not communicate with us, material changes would only accompany
+    a new app version.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions about this policy: <strong>simplymarkx@proton.me</strong></p>
+  </section>
+
+  <section class="doc" id="doc-it" hidden>
+    <p class="lede">eKnow è un'applicazione per la gestione delle finanze personali pubblicata da
+    <strong>Marco Aramini</strong>. In sintesi: tutto resta sul tuo dispositivo e l'app non ha la
+    possibilità tecnica di inviarlo altrove.</p>
+
+    <h2>1. Non raccogliamo alcun dato</h2>
+    <p>L'app non prevede account, registrazione o accesso. Non invia le tue informazioni a noi né a
+    terzi, perché non può farlo: eKnow non richiede il permesso Android di accesso a internet e non
+    effettua alcuna richiesta di rete. Non esiste alcun server dietro l'app. Noi sviluppatori non
+    vediamo mai i tuoi dati.</p>
+    <p>L'app non contiene pubblicità, strumenti di analisi, servizi di segnalazione degli arresti
+    anomali né librerie di tracciamento di terze parti.</p>
+
+    <h2>2. Cosa l'app salva sul tuo dispositivo</h2>
+    <p>Tutto ciò che inserisci viene scritto in un database nell'area di archiviazione privata
+    dell'app, leggibile soltanto dall'app stessa:</p>
+    <ul>
+      <li><strong>Movimenti</strong> — data, descrizione, categoria e importo.</li>
+      <li><strong>Spese ricorrenti</strong> — nome, categoria, importo, frequenza e prossima scadenza.</li>
+      <li><strong>Acquisti pianificati</strong> — nome, categoria, importo, urgenza e data prevista.</li>
+      <li><strong>Investimenti</strong> — nome dell'asset, importo iniziale, versamento mensile e
+      rendimento annuo atteso.</li>
+      <li><strong>Impostazioni</strong> — valuta, lingua, stipendio mensile e giorno di accredito,
+      budget di spesa, tema e stile dell'interfaccia, e se i saldi sono nascosti per impostazione
+      predefinita.</li>
+    </ul>
+    <p>Queste informazioni non lasciano mai il dispositivo, a meno che tu non le esporti
+    deliberatamente (vedi il punto 4).</p>
+
+    <h2>3. Permessi del dispositivo</h2>
+    <ul>
+      <li><strong>Notifiche</strong> — usate esclusivamente per ricordarti una spesa ricorrente qualche
+      giorno prima della scadenza. I promemoria sono programmati e mostrati interamente sul tuo
+      dispositivo. Puoi rifiutare il permesso: il resto dell'app continua a funzionare normalmente.</li>
+      <li><strong>Biometria / sblocco del dispositivo</strong> — se attivi il blocco dei saldi, l'app
+      chiede ad Android di confermare che sei tu prima di mostrarli. La verifica la esegue Android, che
+      restituisce soltanto esito positivo o negativo. L'app non riceve, non vede e non conserva la tua
+      impronta, il tuo volto o il tuo PIN.</li>
+    </ul>
+
+    <h2>4. I backup che crei tu</h2>
+    <p>L'app può esportare i tuoi dati in un file JSON. Questo avviene solo quando sei tu a premere il
+    pulsante di esportazione. Il file viene poi passato al menu di condivisione di Android e
+    <strong>sei tu</strong> a scegliere dove finisce: un'app di messaggistica, un servizio cloud, i tuoi
+    file. Da quel momento il file è sotto il tuo controllo ed è soggetto all'informativa privacy del
+    servizio che hai scelto. Noi non partecipiamo a quel trasferimento e non ne riceviamo copia.</p>
+    <p>L'importazione funziona allo stesso modo, al contrario: scegli un file e l'app lo legge in
+    locale.</p>
+
+    <h2>5. Widget per la schermata Home</h2>
+    <p>I widget opzionali mostrano il saldo e la spesa settimanale nella schermata Home. I valori
+    provengono dallo stesso database locale. Tieni presente che chiunque possa vedere la tua schermata
+    Home può vedere quei valori: se è un problema, rimuovi il widget.</p>
+
+    <h2>6. Per quanto tempo restano i dati e come cancellarli</h2>
+    <p>I tuoi dati restano sul dispositivo finché non li elimini. Puoi cancellare le singole voci
+    dall'app, oppure eliminare tutto in una volta disinstallando eKnow o svuotando l'archiviazione
+    dell'app dalle impostazioni di Android. Poiché non conserviamo alcuna copia, non c'è nulla che tu
+    debba richiederci e nulla che noi possiamo cancellare.</p>
+
+    <h2>7. Minori</h2>
+    <p>eKnow non è rivolta a minori di 13 anni e non raccoglie consapevolmente informazioni da loro. Dal
+    momento che non raccoglie nulla da nessuno, si tratta di una conseguenza della progettazione più che
+    di una policy.</p>
+
+    <h2>8. Non è consulenza finanziaria</h2>
+    <p>eKnow esegue calcoli sui numeri che inserisci e mostra proiezioni basate su ipotesi che scegli
+    tu. È uno strumento organizzativo, non un consulente finanziario abilitato, e i suoi risultati non
+    costituiscono consulenza in materia di investimenti, fiscale o legale.</p>
+
+    <h2>9. Modifiche a questa informativa</h2>
+    <p>In caso di modifiche, la versione aggiornata sarà pubblicata a questo stesso indirizzo e la data
+    in alto cambierà. Poiché l'app non comunica con noi, eventuali modifiche sostanziali
+    accompagnerebbero soltanto una nuova versione dell'app.</p>
+
+    <h2>10. Contatti</h2>
+    <p>Domande su questa informativa: <strong>simplymarkx@proton.me</strong></p>
+  </section>
+
+  <footer>eKnow · com.marcoaramini.app_finanza</footer>
+</main>
+
+<script>
+  var LABEL = {
+    en: "Privacy Policy · Last updated 13 August 2026",
+    it: "Informativa sulla privacy · Ultimo aggiornamento 13 agosto 2026"
+  };
+  document.querySelectorAll(".lang button").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var lang = btn.dataset.lang;
+      document.querySelectorAll(".lang button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b === btn));
+      });
+      document.getElementById("doc-en").hidden = lang !== "en";
+      document.getElementById("doc-it").hidden = lang !== "it";
+      document.getElementById("updated").textContent = LABEL[lang];
+      document.documentElement.lang = lang;
+    });
+  });
+</script>
+</body>
+</html>
